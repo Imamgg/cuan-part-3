@@ -1,7 +1,7 @@
 const DataPenduduk = () => {
     return (
         <>
-            <section className="w-full min-h-screen pt-20 text-white bg-cover bg-center relative" style={{ backgroundImage: "url('/path/to/your/bg.jpg')" }}>
+            <section id="data-penduduk" className="w-full min-h-screen pt-20 text-white bg-cover bg-center relative" style={{ backgroundImage: "url('/path/to/your/bg.jpg')" }}>
                 <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
                 <div className="relative z-10 px-10">
                     <h1 className="text-5xl font-bold text-center mb-10">Demografis Penduduk</h1>

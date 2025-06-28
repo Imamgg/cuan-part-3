@@ -1,6 +1,6 @@
 const Sejarah = () => {
     return (
-        <section className="w-full h-screen flex flex-col justify-center px-20">
+        <section id="sejarah" className="w-full h-screen flex flex-col justify-center px-20">
             {/* <img src="/sejarah.png" className="w-full h-full object-cover" alt="" /> */}
             <h1 className="text-6xl text-amber-950 font-bold text-center mt-20">Sejarah</h1>
             <div className="flex flex-col gap-10 mt-16 text-amber-950 text-sm">

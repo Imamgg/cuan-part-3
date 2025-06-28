@@ -1,6 +1,6 @@
 const Perkenalan = () => {
     return (
-        <section className="grid grid-cols-2 w-full h-screen">
+        <section id="perkenalan" className="grid grid-cols-2 w-full h-screen">
             <div className="w-full h-full bg-[url('/perkenalan.png')] bg-cover flex flex-col justify-center text-white px-32">
                 <div>
                     <h1 className="text-7xl font-bold mb-10 mt-28">Desa Ijo</h1>
