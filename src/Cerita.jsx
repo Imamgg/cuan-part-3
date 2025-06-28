@@ -1,5 +1,6 @@
 import AlbumFoto from "./components/Cerita/AlbumFoto";
 import Artikel from "./components/Cerita/Artikel";
+import Tentang from "./components/Cerita/Tentang";
 import Navbar from "./components/Navbar";
 
 const Cerita = () => {
@@ -8,6 +9,7 @@ const Cerita = () => {
             <Navbar />
             <Artikel />
             <AlbumFoto />
+            <Tentang />
         </div>
     )
 }

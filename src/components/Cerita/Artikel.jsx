@@ -19,10 +19,8 @@ const Artikel = () => {
         <>
             <section className="w-full min-h-screen pt-30 pb-10 px-10 text-white bg-cover bg-center relative" style={{ backgroundImage: "url('https://imgs.search.brave.com/XQMDAI78KWSkNZxRRptWBcUjj1efSGpQrskMjuuBbbQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMy/MTA3MzYyL2lkL2Zv/dG8va3VjaW5nLW9i/ZXNpdGFzLW5ha2Fs/LWJlcm1hdGEtYmVz/YXItbWVsaWhhdC10/YXJnZXQtaW5nZ3Jp/cy1tZW55b3J0aXIt/a3VjaW5nLXJhbWJ1/dC5qcGc_Yj0xJnM9/NjEyeDYxMiZ3PTAm/az0yMCZjPUdvMGJ6/dlBZNlZjUU9sZ3FB/Q0hvdkxmNEVuMFFW/dElsSkNMcVpjUVdJ/cTg9')" }}>
                 <div className="relative">
-                    <div className="absolute inset-0 bg-black/50 backdrop-blur-sm">
-                        
-                    </div>
-                    <input className="px-4 py-3 bg-white/30 w-full rounded-2xl focus:outline-2 focus:outline-white font-bold" type="text" name="search" placeholder="Cari Berita/Kegiatan Desa Ijo" />
+                    <img className="absolute w-10 opacity-70 left-8 top-1/2 -translate-1/2" src="./search.svg" alt="" />
+                    <input className="px-16 py-3 bg-white/30 w-full rounded-2xl focus:outline-2 focus:outline-white font-bold" type="text" name="search" placeholder="Cari Berita/Kegiatan Desa Ijo" />
                 </div>
                 <div className="grid grid-cols-2 mt-8">
                     <div>
