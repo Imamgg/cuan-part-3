@@ -7,6 +7,7 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const isProfilePage = location.pathname === "/profile";
   const isPesonaPage = location.pathname === "/pesona";
+  const isCeritaPage = location.pathname === "/cerita";
 
   const handleSectionClick = (sectionId) => {
     setShowDropdown(false);
@@ -140,14 +141,47 @@ const Navbar = () => {
           )}
         </li>
         <li
-          className={cn(
-            "px-12 py-2 rounded-full font-bold",
-            location.pathname === "/cerita"
-              ? "bg-amber-950 text-white"
-              : getColorLink()
-          )}
+          className="relative"
+          onClick={() => isCeritaPage && setShowDropdown(!showDropdown)}
         >
-          <Link to={"/cerita"}>Cerita</Link>
+          <div
+            className={cn(
+              "px-12 py-2 rounded-full font-bold cursor-pointer relative z-10",
+              location.pathname === "/cerita"
+                ? "bg-amber-950 text-white"
+                : getColorLink()
+            )}
+          >
+            <Link to={"/cerita"}>Cerita</Link>
+          </div>
+          {isCeritaPage && showDropdown && (
+            <ul className="absolute text-center left-1/2 transform -translate-x-1/2 -mt-10 w-36 pt-10 bg-amber-900/50 backdrop-blur-sm rounded-2xl shadow-lg py-2 z-[5]">
+              <li className="px-4 py-1">
+                <button
+                  onClick={() => handleSectionClick("artikel")}
+                  className="text-white hover:font-semibold transition-colors cursor-pointer"
+                >
+                  Artikel
+                </button>
+              </li>
+              <li className="px-4 py-1">
+                <button
+                  onClick={() => handleSectionClick("albumFoto")}
+                  className="text-white hover:font-semibold transition-colors cursor-pointer"
+                >
+                  Album Foto
+                </button>
+              </li>
+              <li className="px-4 py-1">
+                <button
+                  onClick={() => handleSectionClick("tentang")}
+                  className="text-white hover:font-semibold transition-colors cursor-pointer"
+                >
+                  Tentang Desa
+                </button>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
     </nav>

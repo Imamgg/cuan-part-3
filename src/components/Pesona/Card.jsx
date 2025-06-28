@@ -46,18 +46,14 @@ const Card = () => {
   const visibleDestinations = getVisibleDestinations();
 
   return (
-    <>
-      <div className="relative w-full h-screen overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{
-            backgroundImage: "url('/placeholder.svg?height=800&width=1200')",
-          }}
-        />
-
-        <div className="relative z-10 flex items-center justify-center h-full px-4">
+    <div className="flex flex-col items-center justify-center h-full w-full">
+      <h1 className="text-6xl font-bold text-amber-950 drop-shadow-lg">
+        Wisata
+      </h1>
+      <div className="relative w-full mx-auto px-4">
+        <div className="relative z-10 flex items-center justify-center h-[600px]">
           <button
-            className="absolute left-8 z-20 bg-amber-950 bg-opacity-20 hover:bg-opacity-40 text-white rounded-full w-12 h-12 border-none cursor-pointer transition-all duration-200 flex items-center justify-center"
+            className="absolute left-8 z-20 bg-amber-950 bg-opacity-50 hover:bg-opacity-70 text-white rounded-full w-12 h-12 border-none cursor-pointer transition-all duration-200 flex items-center justify-center"
             onClick={prevSlide}
           >
             <svg
@@ -120,7 +116,7 @@ const Card = () => {
           </div>
 
           <button
-            className="absolute right-8 z-20 bg-amber-950 bg-opacity-20 hover:bg-opacity-40 text-white rounded-full w-12 h-12 border-none cursor-pointer transition-all duration-200 flex items-center justify-center"
+            className="absolute right-8 z-20 bg-amber-950 bg-opacity-50 hover:bg-opacity-70 text-white rounded-full w-12 h-12 border-none cursor-pointer transition-all duration-200 flex items-center justify-center"
             onClick={nextSlide}
           >
             <svg
@@ -139,7 +135,7 @@ const Card = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
