@@ -7,7 +7,7 @@ const Artikel = () => {
         cards.push(
             // key isi id di tabel database
             <div className="h-full" key={title}>
-                <div className="px-2 py-8 rounded-3xl flex flex-col gap-2 h-96 justify-end" style={{backgroundImage: "url('https://imgs.search.brave.com/vcIbgenQZXpFVLJbSHqVaQl7G29QIQc6-IC8Uc4JMVU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zYXdh/aC1kaS1jaXBhcmF5/LTI0MzUwOTk0Ny5q/cGc')"}}>
+                <div className="px-2 py-8 rounded-3xl flex flex-col gap-2 h-96 justify-end bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://imgs.search.brave.com/vcIbgenQZXpFVLJbSHqVaQl7G29QIQc6-IC8Uc4JMVU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zYXdh/aC1kaS1jaXBhcmF5/LTI0MzUwOTk0Ny5q/cGc')"}}>
                     <h1 className="font-bold text-2xl">{title}</h1>
                     <Link className="bg-amber-950 rounded-2xl px-4 p-1 text-sm w-full block" to="/cerita">Baca Selengkapnya...</Link>
                 </div>

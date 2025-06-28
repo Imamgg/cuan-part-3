@@ -1,4 +1,4 @@
-export function TabNavigation({ activeTab, onTabChange }) {
+export default function TabNavigation({ activeTab, onTabChange }) {
   return (
     <div className="flex border-b border-gray-200 mb-8">
       <button
