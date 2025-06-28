@@ -7,7 +7,7 @@ const AlbumFoto = () => {
     }
     return (
         <>
-        <section className="w-full h-screen px-10" id="albumFoto">
+        <section className="w-full px-10" id="albumFoto">
             <h1 className="text-6xl font-bold text-center pt-24 mb-8 text-amber-950">Album Foto</h1>
             <div className="flex">
                 <div className="w-1/3 relative pr-10">
