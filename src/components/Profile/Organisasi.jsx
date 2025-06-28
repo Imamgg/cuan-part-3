@@ -1,6 +1,6 @@
 const Organisasi = () => {
     return (
-        <section className="w-full h-screen flex flex-col text-amber-950 mt-20 relative">
+        <section id="organisasi" className="w-full h-screen flex flex-col text-amber-950 mt-20 relative">
             <h1 className="text-5xl font-bold text-center">Organisasi di Desa Ijo</h1>
             <div className="flex justify-center items-center gap-5 mt-32 px-20 z-20">
                 <div className="w-1/3 bg-white">
