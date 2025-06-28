@@ -1,0 +1,15 @@
+const Sejarah = () => {
+    return (
+        <section className="w-full h-screen flex flex-col justify-center px-20">
+            {/* <img src="/sejarah.png" className="w-full h-full object-cover" alt="" /> */}
+            <h1 className="text-6xl text-amber-950 font-bold text-center mt-20">Sejarah</h1>
+            <div className="flex flex-col gap-10 mt-16 text-amber-950 text-sm">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam vitae natus soluta quidem necessitatibus repellat, ut illum neque veritatis ab saepe architecto nesciunt nulla distinctio! Provident cumque adipisci modi aliquam qui consequatur, optio consequuntur corporis. Numquam dolorum impedit quod sit corrupti nihil earum magnam doloribus culpa alias ducimus, aspernatur labore laboriosam mollitia debitis porro ratione minus distinctio deleniti facilis laudantium. Rerum repellendus voluptatibus id eaque, tenetur aut aliquam! Eius, ad ipsam, illum nulla consequatur rem odio architecto ratione ex aspernatur sit accusantium suscipit. Non sed expedita iure voluptas unde libero aliquam officia minus! Dolore, voluptatem non odit debitis similique neque iste harum autem mollitia ducimus vero explicabo eius totam quidem blanditiis. Similique quod exercitationem doloribus beatae, odio animi consequatur, voluptate delectus earum asperiores non ad ea, repellat nihil nobis aut. Maxime, qui atque. Numquam porro pariatur voluptates sit vero qui facilis, corrupti vitae sapiente expedita neque maxime dolorem adipisci accusantium.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus esse debitis quam quod omnis sapiente eius repellat natus, provident aperiam odio veritatis reprehenderit ipsum molestias perferendis aliquid dicta? Labore voluptate nisi commodi esse. Id ab saepe veniam nihil tempore amet inventore totam maxime vel quibusdam ipsum dolores magni deleniti fugit, fugiat laboriosam sunt dicta rerum hic quis praesentium perferendis. Tempora dolor, consequatur ipsum et voluptates ullam deleniti, eos dolorum omnis nam magnam? Natus, commodi! Quaerat possimus laborum, asperiores ab similique blanditiis praesentium. Neque vel tenetur dolorum ipsam quos nobis tempora, animi deleniti voluptatum sed perferendis velit aut itaque quam quibusdam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus esse debitis quam quod omnis sapiente eius repellat natus, provident aperiam odio veritatis reprehenderit ipsum molestias perferendis aliquid dicta? Labore voluptate nisi commodi esse. Id ab saepe veniam nihil tempore amet inventore totam maxime vel quibusdam ipsum dolores magni deleniti fugit, fugiat laboriosam sunt dicta rerum hic quis praesentium perferendis. Tempora dolor, consequatur ipsum et voluptates ullam deleniti, eos dolorum omnis nam magnam? Natus, commodi! Quaerat possimus laborum, asperiores ab similique blanditiis praesentium. Neque vel tenetur dolorum ipsam quos nobis tempora, animi deleniti voluptatum sed perferendis velit aut itaque quam quibusdam.</p>
+            </div>
+        </section>
+    )
+};
+
+export default Sejarah;

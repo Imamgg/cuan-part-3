@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Dalam file CSS global atau style.css */
+.scrollbar-none {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;               /* WebKit (Chrome, Safari) */
+}
