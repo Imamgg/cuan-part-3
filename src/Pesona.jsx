@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import Card from "./components/Pesona/Card";
+import KomoditasPage from "./components/Pesona/Komoditas";
+import PotensiPage from "./components/Pesona/Potensi";
 import Santerra from "./components/Pesona/Santerra";
 
 const Pesona = () => {
@@ -10,6 +12,8 @@ const Pesona = () => {
         <section className="w-full h-screen bg-[url('https://i.pinimg.com/736x/7a/76/1d/7a761d0c69df3858fceff11ef8708f48.jpg')] bg-cover bg-center relative pt-28">
           <Card />
           <Santerra />
+          <KomoditasPage />
+          <PotensiPage />
         </section>
       </main>
     </>

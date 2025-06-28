@@ -26,7 +26,7 @@ const Santerra = () => {
   ];
 
   return (
-    <div className="h-screen w-full bg-white py-8">
+    <div className="w-full bg-white py-8">
       <div className="px-4 pb-20">
         <div className="flex">
           <div className="relative">
@@ -37,7 +37,7 @@ const Santerra = () => {
               {sections.map((section, index) => (
                 <div key={index} className="relative">
                   {section.image && (
-                    <div className="w-52 h-56">
+                    <div className="w-52 h-72">
                       <img
                         src={section.image}
                         alt={section.title}
@@ -54,7 +54,7 @@ const Santerra = () => {
             {sections.map((section, index) => (
               <div key={index} className="flex justify-between items-start">
                 <div className="flex flex-col flex-1">
-                  <h2 className="text-3xl font-bold text-amber-950">
+                  <h2 className="text-4xl mb-2 font-bold text-amber-950">
                     {section.title}
                   </h2>
                   <p className="text-amber-950">{section.content}</p>

@@ -29,7 +29,7 @@ const AlbumFoto = () => {
   }
   return (
     <>
-      <section className="w-full h-screen px-10" id="albumFoto">
+      <section className="w-full px-10" id="albumFoto">
         <h1 className="text-6xl font-bold text-center pt-24 mb-8 text-amber-950">
           Album Foto
         </h1>
