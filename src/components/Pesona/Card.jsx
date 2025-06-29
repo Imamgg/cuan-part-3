@@ -46,7 +46,10 @@ const Card = () => {
   const visibleDestinations = getVisibleDestinations();
 
   return (
-    <div className="flex flex-col items-center justify-center h-full w-full">
+    <div
+      id="wisata"
+      className="flex flex-col items-center justify-center h-full w-full"
+    >
       <h1 className="text-6xl font-bold text-amber-950 drop-shadow-lg">
         Wisata
       </h1>
