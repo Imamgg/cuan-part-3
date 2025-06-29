@@ -1,40 +1,13 @@
-import { useState } from "react";
-
-const destinations = [
-  {
-    id: 1,
-    title: "Jatim Park 2",
-    image: "/sejarah.png",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero explicabo optio minima officiis doloremque sint labore necessitatibus repudiandae facere temporibus quis nobis, veniam sunt numquam reiciendis, aut amet fugiat.",
-  },
-  {
-    id: 2,
-    title: "Santerra",
-    image: "/perkenalan.png",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero explicabo optio minima officiis doloremque sint labore necessitatibus repudiandae facere temporibus quis nobis, veniam sunt numquam reiciendis, aut amet fugiat.",
-  },
-  {
-    id: 3,
-    title: "Selecta",
-    image: "/home.png",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis libero explicabo optio minima officiis doloremque sint labore necessitatibus repudiandae facere temporibus quis nobis, veniam sunt numquam reiciendis, aut amet fugiat.",
-  },
-];
-
-const Card = () => {
-  const [currentIndex, setCurrentIndex] = useState(1);
+const Card = ({ destinations, currentIndex, setCurrentIndex }) => {
+  // console.log(`from card ${currentIndex}`)
+  // const [currentIndex, setCurrentIndex] = useState(1);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % destinations.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + destinations.length) % destinations.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + destinations.length) % destinations.length);
   };
 
   const getVisibleDestinations = () => {
@@ -44,12 +17,10 @@ const Card = () => {
   };
 
   const visibleDestinations = getVisibleDestinations();
+  console.log(visibleDestinations);
 
   return (
-    <div
-      id="wisata"
-      className="flex flex-col items-center justify-center h-full w-full"
-    >
+    <div id="wisata" className="flex flex-col items-center justify-center h-full w-full">
       <h1 className="text-6xl font-bold text-amber-950 drop-shadow-lg">
         Wisata
       </h1>
@@ -93,7 +64,7 @@ const Card = () => {
                 <div className="p-0 h-full flex flex-col">
                   <div className="relative h-3/5 overflow-hidden rounded-t-lg">
                     <img
-                      src={destination.image}
+                      src={destination.images[0]}
                       alt={destination.title}
                       className="w-full h-full object-cover"
                     />
