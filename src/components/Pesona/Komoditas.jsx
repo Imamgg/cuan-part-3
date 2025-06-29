@@ -38,7 +38,7 @@ const Komoditas = () => {
   ];
     return (
         <>
-          <section className="px-10 pb-6">
+          <section className="px-10 pb-6 pt-28" id="komoditas">
             <h1 className="text-5xl font-bold text-center text-amber-950 mb-6">Komoditas</h1>
             <hr className="border-2 border-amber-950" />
             <div className="flex items-center justify-evenly">
